@@ -1,0 +1,26 @@
+{
+  "name": "DaggerioSnippets",
+  "description": "Code snippets for Dagger.io",
+  "version": "0.1.0",
+  "displayName": "Dagger snippets",
+  "publisher": "solidnerd",
+  "license": "SEE LICENSE IN LICENSE.md",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/solidnerd/vscode-dagger"
+  },
+  "engines": {
+    "vscode": "^1.66.0"
+  },
+  "categories": [
+    "Snippets"
+  ],
+  "contributes": {
+    "snippets": [
+      {
+        "language": "cue",
+        "path": "./snippets/snippets.json"
+      }
+    ]
+  }
+}

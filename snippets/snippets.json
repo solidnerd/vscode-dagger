@@ -1,0 +1,45 @@
+{
+  // Place your snippets for cue here. Each snippet is defined under a snippet name and has a prefix, body and
+  // description. The prefix is what is used to trigger the snippet and the body will be expanded and inserted. Possible variables are:
+  // $1, $2 for tab stops, $0 for the final cursor position, and ${1:label}, ${2:another} for placeholders. Placeholders with the
+  // same ids are connected.
+  // Example:
+  "Dagger Main": {
+    "prefix": "main",
+    "body": [
+      "package $1",
+      "",
+      "import (",
+      "\t\"dagger.io/dagger\"",
+      "\t\"universe.dagger.io/bash\"",
+      "\t\"universe.dagger.io/alpine\"",
+      ")",
+      "",
+      "dagger.#Plan & {",
+      "\tclient: {",
+      "\t\tfilesystem: {",
+      "\t\t\t// Reads current Dir",
+      "\t\t\t\".\": read: {",
+      "\t\t\t\tcontents: dagger.#FS",
+      "\t\t\t}",
+      "\t\t}",
+      "\t}",
+      "",
+      "\tactions: {",
+      "\t\t_alpine: alpine.#Build & {",
+      "\t\t\tpackages: bash: _",
+      "\t\t}",
+      "",
+      "\t\t// Hello world",
+      "\t\thello: bash.#Run & {",
+      "\t\t\tinput: _alpine.output",
+      "\t\t\tscript: contents: \"echo Hello World\"",
+      "\t\t\talways: true",
+      "\t\t}",
+      "\t}",
+      "}",
+      ""
+    ],
+    "description": "A simple dagger plan to start"
+  }
+}
