@@ -7,7 +7,7 @@ name: Deploy Extension
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    if: github.repository_owner == 'vscode-dagger'
+    if: github.repository_owner == 'solidnerd'
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
