@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file.
 
+## [1.1.0](https://github.com/solidnerd/vscode-dagger/compare/v1.0.0...v1.1.0) (2022-04-27)
+
+
+### Features
+
+* add more smaller snippets ([4aeb61f](https://github.com/solidnerd/vscode-dagger/commit/4aeb61f32a23343c7cb8181054baa1bc7bafced5))
+
+
+### Bug Fixes
+
+* **ci:** add manual job for vscode extension ([eea0317](https://github.com/solidnerd/vscode-dagger/commit/eea03170c5128d69b0ffc5ad634ba9cf1b3965b2))
+
 ## 1.0.0 (2022-04-27)
 
 
