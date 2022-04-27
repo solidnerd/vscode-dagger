@@ -8,7 +8,7 @@ on:
       - master
     paths:
       - 'snippets/*'
-      - '.github/workflows/release.yml'
+      - '.github/workflows/release.yaml'
 
 jobs:
   release:
