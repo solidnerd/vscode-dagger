@@ -1,4 +1,53 @@
 {
+  "client": {
+    "prefix": "cl",
+    "body": [
+      "\\tclient: {",
+      "\\t\\tfilesystem: {",
+      "\\t\\t\\t\"./\": read: {",
+      "\\t\\t\\t\\tcontents: dagger.#FS",
+      "\\t\\t\\t\\texclude: []",
+      "\\t\\t\\t}",
+      "\\t\\t}",
+      "  }"
+    ],
+    "description": "Generates a Client with the default filesystem read"
+  },
+  "env": {
+    "prefix": "cenv",
+    "body": ["\t\tenv: {", "\t\t//APP_NAME:      string ", "\t\t}"],
+    "description": "Generates an environment block for the client"
+  },
+  "Content": {
+    "prefix": "c",
+    "body": ["contents: $1"],
+    "description": "A content key "
+  },
+  "Input": {
+    "prefix": "in",
+    "body": ["input: $1"],
+    "description": "A content key "
+  },
+  "Output": {
+    "prefix": "ou",
+    "body": ["ou: $1"],
+    "description": "A content key "
+  },
+  "ScriptContent": {
+    "prefix": "sc",
+    "body": ["script: contents: #\"\"\"", "$1", "\"\"\"#"],
+    "description": "A script content"
+  },
+  "Import": {
+    "prefix": "imp",
+    "body": ["import (", "$1", ")", ""],
+    "description": "A script content"
+  },
+  "DaggerFS": {
+    "prefix": "dfs",
+    "body": ["dagger.#FS"],
+    "description": "A content key "
+  },
   "Dagger Main": {
     "prefix": "main",
     "body": [

@@ -38,3 +38,9 @@ Below is a list of all available snippets and the triggers of each one. The **â‡
 | `mainâ†’`   | generates a hello world [example](https://github.com/dagger/dagger/blob/main/cmd/dagger/cmd/project/templates/hello.cue) |
 
 [code]: https://code.visualstudio.com/
+
+## Contributing
+
+Contributions are always welcome. Don't be shy!
+
+If there's no other issue already discussing what you want, simply open a new issue and the maintainers will gladly review it and respond as soon as possible.
