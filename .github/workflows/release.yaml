@@ -9,6 +9,7 @@ on:
     paths:
       - 'snippets/*'
       - '.github/workflows/release.yaml'
+      - '.releaserc.json'
 
 jobs:
   release:
